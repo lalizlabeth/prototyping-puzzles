@@ -1,7 +1,12 @@
 .container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  max-width: 600px;
 }
 
 .header {
@@ -14,18 +19,16 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .card {
   padding: 1.5rem;
   border-radius: var(--border-radius);
-  background: rgba(0, 0, 0, 0.02);
   border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: all 0.2s ease;
+  border-radius: 10px;
   text-decoration: none;
   color: inherit;
   cursor: pointer;
@@ -34,7 +37,6 @@
 
 .card:hover {
   background: rgba(0, 0, 0, 0.04);
-  transform: translateY(-2px);
 }
 
 .card h3 {

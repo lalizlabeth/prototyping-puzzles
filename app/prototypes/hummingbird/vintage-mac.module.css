@@ -1,0 +1,134 @@
+/* Vintage Mac OS styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #666;
+  background-image: repeating-linear-gradient(45deg, #666, #666 2px, #777 2px, #777 4px);
+  min-height: 100vh;
+  font-family: "SF Pro", -apple-system, system-ui, sans-serif;
+}
+
+.window {
+  background-color: #e6e6e6;
+  border: 2px solid #000;
+  border-radius: 2px;
+  box-shadow: 2px 2px 0 #000;
+  margin-bottom: 2rem;
+}
+
+.titleBar {
+  background: linear-gradient(90deg, #fff, #000);
+  height: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  border-bottom: 1px solid #000;
+}
+
+.titleText {
+  color: #000;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.postForm {
+  padding: 1rem;
+}
+
+.postInput {
+  width: 100%;
+  min-height: 80px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 0;
+  padding: 8px;
+  font-family: inherit;
+  font-size: 13px;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+.postButton {
+  background-color: #e6e6e6;
+  border: 2px solid #000;
+  border-radius: 0;
+  padding: 4px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #000;
+}
+
+.postButton:active {
+  transform: translate(2px, 2px);
+  box-shadow: none;
+}
+
+.feed {
+  padding: 1rem;
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid #000;
+  margin-bottom: 1rem;
+  padding: 8px;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.avatar {
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  border: 1px solid #000;
+}
+
+.postMeta {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.timestamp {
+  font-size: 11px;
+  color: #666;
+}
+
+.content {
+  font-size: 13px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Classic Mac OS scrollbar styles */
+.feed::-webkit-scrollbar {
+  width: 16px;
+}
+
+.feed::-webkit-scrollbar-track {
+  background: #e6e6e6;
+  border: 1px solid #000;
+}
+
+.feed::-webkit-scrollbar-thumb {
+  background: #999;
+  border: 1px solid #000;
+} 

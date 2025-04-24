@@ -4,17 +4,26 @@ import { instrumentSans } from './fonts';
 
 export default function Home() {
   // Add your prototypes to this array
-  const prototypes = [
+  const prototypes: Array<{
+    name: string;
+    description: string;
+    href: string;
+  }> = [
     {
-      title: 'Getting started',
-      description: 'How to create a prototype',
-      path: '/prototypes/example'
+      name: 'Finance dashboard',
+      description: 'A personal finance dashboard with expense tracking and visualizations',
+      href: '/prototypes/finance-dashboard',
     },
     {
-      title: 'Confetti button',
-      description: 'An interactive button that creates a colorful confetti explosion',
-      path: '/prototypes/confetti-button'
+      name: 'Hummingbird',
+      description: 'A little social media Twitter clone',
+      href: '/prototypes/hummingbird',
     },
+    {
+      name: 'Tasks',
+      description: 'A to do list app',
+      href: '/prototypes/tasks',
+    },  
     // Add your new prototypes here like this:
     // {
     //   title: 'Your new prototype',
@@ -24,26 +33,25 @@ export default function Home() {
   ];
 
   return (
-    <div className={`${styles.container} ${instrumentSans.className}`}>
-      <header className={styles.header}>
-        <h1>Elizabeth's prototypes</h1>
-      </header>
-
-      <main>
+    <main className={`${styles.container} ${instrumentSans.className}`}>
+      <div className={styles.wrapper}>
+        <header className={styles.header}>
+          <h1>Make it not ugly</h1>
+        </header>
         <section className={styles.grid}>
           {/* Goes through the prototypes list (array) to create cards */}
           {prototypes.map((prototype, index) => (
             <Link 
               key={index}
-              href={prototype.path} 
+              href={prototype.href} 
               className={styles.card}
             >
-              <h3>{prototype.title}</h3>
+              <h3>{prototype.name}</h3>
               <p>{prototype.description}</p>
             </Link>
           ))}
         </section>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 }

@@ -31,14 +31,7 @@ app/
 
 ## How the puzzles work
 
-Each puzzle presents you with a basic, functional prototype that needs visual improvements. Your task is to:
-
-1. Review the puzzle's README for specific requirements
-2. Examine the current implementation
-3. Practice communicating design improvements to Cursor AI
-4. Implement the changes using Cursor's suggestions
-5. Reflect on the effectiveness of your communication
-
+Each puzzle presents you with a basic, functional prototype that needs visual improvements.
 
 ## Tips for communicating design changes
 

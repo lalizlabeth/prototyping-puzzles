@@ -2,7 +2,7 @@
 .container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 3rem 1rem;
   background-color: #666;
   background-image: repeating-linear-gradient(45deg, #666, #666 2px, #777 2px, #777 4px);
   min-height: 100vh;
@@ -12,14 +12,14 @@
 .window {
   background-color: #e6e6e6;
   border: 2px solid #000;
-  border-radius: 2px;
+  border-radius: 8px;
   box-shadow: 2px 2px 0 #000;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .titleBar {
-  background: linear-gradient(90deg, #fff, #000);
-  height: 20px;
+  background: #e6e6e6;
+  height: 32px;
   display: flex;
   align-items: center;
   padding: 0 8px;
@@ -27,95 +27,103 @@
 }
 
 .titleText {
-  color: #000;
-  font-size: 13px;
-  font-weight: bold;
+  color: #666;
+  font-size: 14px;
+  font-weight: normal;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .postForm {
-  padding: 1rem;
+  padding: 0.75rem;
 }
 
 .postInput {
   width: 100%;
-  min-height: 80px;
+  min-height: 100px;
   background-color: #fff;
-  border: 1px solid #000;
-  border-radius: 0;
-  padding: 8px;
+  border: 3px solid #000;
+  border-radius: 12px;
+  padding: 1rem;
   font-family: inherit;
-  font-size: 13px;
+  font-size: 12px;
   resize: vertical;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .postButton {
-  background-color: #e6e6e6;
-  border: 2px solid #000;
-  border-radius: 0;
-  padding: 4px 12px;
-  font-size: 13px;
-  font-weight: bold;
+  background-color: #000;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 24px;
+  font-size: 12px;
+  font-weight: normal;
   cursor: pointer;
-  box-shadow: 2px 2px 0 #000;
+  color: #fff;
 }
 
 .postButton:active {
   transform: translate(2px, 2px);
-  box-shadow: none;
+  opacity: 0.8;
 }
 
 .feed {
-  padding: 1rem;
+  padding: 1.5rem 0.75rem;
 }
 
 .post {
   background-color: #fff;
-  border: 1px solid #000;
-  margin-bottom: 1rem;
-  padding: 8px;
+  border: 1px dotted #666;
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  border-radius: 4px;
 }
 
 .postHeader {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-bottom: 8px;
+  align-items: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .avatar {
-  width: 32px;
-  height: 32px;
-  background-color: #000;
+  width: 24px;
+  height: 24px;
+  background-color: #666;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-weight: bold;
-  font-size: 14px;
-  border: 1px solid #000;
+  font-weight: normal;
+  font-size: 10px;
+  border-radius: 50%;
 }
 
 .postMeta {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
 }
 
 .username {
-  font-weight: bold;
-  font-size: 13px;
+  font-weight: normal;
+  font-size: 12px;
+  color: #333;
 }
 
 .timestamp {
-  font-size: 11px;
-  color: #666;
+  font-size: 12px;
+  color: #999;
 }
 
 .content {
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.4;
   margin: 0;
+  padding-top: 0.5rem;
+  color: #333;
+  border-top: 1px solid #eee;
 }
 
 /* Classic Mac OS scrollbar styles */
